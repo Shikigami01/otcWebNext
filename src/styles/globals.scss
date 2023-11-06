@@ -1,0 +1,81 @@
+/* stylelint-disable scss/dollar-variable-pattern, selector-class-pattern */
+:root {
+  --gray: #c8c7cc;
+  --brown: #3a3b33;
+  --black: #040000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: LINESeedJP, sans-serif;
+  background-color: #fcfcfc;
+}
+
+@font-face {
+  font-family: LINESeedJP;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/LINESeedJP_OTF_Rg.woff2') format('woff2');
+  font-display: auto;
+}
+
+@font-face {
+  font-family: LINESeedJP;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/LINESeedJP_OTF_Bd.woff2') format('woff2');
+  font-display: auto;
+}
+
+main {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1024px;
+  padding: 50px 16px 0;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+// AUdio Player のスタイルの上書き
+.rhap_container {
+  padding: 8px;
+  background: none;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 40%);
+
+  .rhap_progress-indicator {
+    background: var(--brown);
+  }
+
+  .rhap_time {
+    color: inherit;
+  }
+
+  .rhap_controls-section {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+
+    .rhap_main-controls-button {
+      margin: 0;
+      color: var(--brown);
+    }
+
+    .rhap_volume-button {
+      color: var(--brown);
+    }
+
+    .rhap_volume-indicator {
+      background: var(--brown);
+    }
+  }
+}
