@@ -1,0 +1,17 @@
+.item {
+  font-size: 1rem;
+  line-height: 1.5;
+  counter-increment: cnt;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &::before {
+    content: counter(cnt, decimal-leading-zero) '. ';
+  }
+}
+
+.text {
+  padding-left: 2em;
+}
