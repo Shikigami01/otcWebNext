@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  padding: 2px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--gray);
+
+  @media (width >= 768px) {
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 2px;
+      content: '';
+      background-color: var(--gray);
+      background-repeat: no-repeat;
+      transition: width 100ms;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
