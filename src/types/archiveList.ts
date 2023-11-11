@@ -1,14 +1,13 @@
-export type archiveList = {
+export type archiveListType = {
   id: number;
-  modelNumber: string;
-  imageUrl: string;
   releaseDate: string;
   title: string;
-  listenLink: string;
-  isListenLinkFlag: boolean;
-  trackList: trackList;
+  isListen: boolean;
+  trackList: trackListType[];
 };
 
-export type trackList = [
-  { trackName: string; isOriginalSongFlag: boolean; originalSongName: string },
-];
+export type trackListType = {
+  trackName: string;
+  isOriginalSongFlag: boolean;
+  originalSongName: string;
+};
