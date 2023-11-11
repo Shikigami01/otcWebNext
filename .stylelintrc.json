@@ -10,6 +10,7 @@
       {
         "ignoreAtRules": ["apply", "layer", "responsive", "screen", "tailwind"]
       }
-    ]
+    ],
+    "selector-class-pattern": null
   }
 }
