@@ -1,5 +1,4 @@
 export type Styles = {
-  header: string;
   rhap_container: string;
   'rhap_controls-section': string;
   'rhap_main-controls-button': string;
