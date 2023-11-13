@@ -8,7 +8,7 @@ const meta = {
   title: 'ArchiveList',
   component: ArchiveList,
   args: {
-      data: archiveListData,
+    data: archiveListData,
   },
 } satisfies Meta<typeof ArchiveList>;
 

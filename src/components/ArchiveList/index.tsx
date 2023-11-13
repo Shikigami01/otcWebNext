@@ -1,20 +1,34 @@
-import type { archiveListData } from '../../assets/archiveList';
+import Link from 'next/link';
+import { archiveListData } from '../../assets/archiveList';
 import { Artwork } from '../Artwork';
 import styles from './styles.module.scss';
+import { archiveListType } from '@/types/archiveList';
 
 type Props = {
-  data: typeof archiveListData;
+  data: Record<number, archiveListType>;
 };
 
 export const ArchiveList: React.FC<Props> = ({ data }) => {
+  // archiveListDataを `{ id: number, title: string }[]` の型に変換
+  const convertedArchiveListData: { id: number; title: string }[] = Object.values(
+    archiveListData
+  ).map((item) => {
+    return {
+      id: item.id,
+      title: item.title,
+    };
+  });
+
+  convertedArchiveListData.reverse();
+
   return (
     <ul className={styles.list}>
-      {data.map((item) => {
+      {convertedArchiveListData.map((item) => {
         return (
           <li key={item.id} className={styles.item}>
-            <a href={`/archive/${item.id}`}>
+            <Link href={`/archive/${item.id}`}>
               <Artwork id={item.id} name={item.title} />
-            </a>
+            </Link>
           </li>
         );
       })}
