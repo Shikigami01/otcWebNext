@@ -1,8 +1,8 @@
-import type { trackList } from '../../types/archiveList';
+import type { trackListType } from '../../types/archiveList';
 import styles from './styles.module.scss';
 
 type Props = {
-  data: trackList;
+  data: trackListType[];
 };
 
 export const SongList: React.FC<Props> = ({ data }) => {
