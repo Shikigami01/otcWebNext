@@ -7,6 +7,7 @@ const meta = {
   title: 'Player',
   component: Player,
   args: {
+    isListen: true,
     id: 14,
   },
 } satisfies Meta<typeof Player>;
