@@ -1,0 +1,42 @@
+.wrapper {
+  margin: 16px auto;
+}
+
+.title {
+  margin: 0 auto 16px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (width >= 600px) {
+    flex-direction: row;
+  }
+}
+
+.artwork {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (width >= 600px) {
+    width: 260px;
+    margin: 0;
+  }
+
+  @media (width >= 768px) {
+    width: 400px;
+  }
+}
+
+.player {
+  margin-top: 16px;
+}
+
+.date {
+  margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
