@@ -1,9 +1,11 @@
-export const archiveListData = [
-  {
+import { archiveListType } from '@/types/archiveList';
+
+export const archiveListData: Record<number, archiveListType> = {
+  21: {
     id: 21,
     releaseDate: '2023/10',
     title: 'フレー！フレー！先生！',
-    isListenLinkFlag: false,
+    isListen: true,
     trackList: [
       {
         trackName: 'Starting Pistol (Tropical House Remix)',
@@ -17,11 +19,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  20: {
     id: 20,
     releaseDate: '2023/08',
     title: 'PERORO PERORO DREAM',
-    isListenLinkFlag: false,
+    isListen: true,
     trackList: [
       {
         trackName: 'Constant Moderato (Tropical House Remix)',
@@ -55,11 +57,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  19: {
     id: 19,
     releaseDate: '2022/12',
     title: 'like a disco',
-    isListenLinkFlag: false,
+    isListen: false,
     trackList: [
       {
         trackName: 'the beginning of night (2022 remix)',
@@ -88,11 +90,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  18: {
     id: 18,
     releaseDate: '2022/09',
     title: 'Bright green rain',
-    isListenLinkFlag: false,
+    isListen: false,
     trackList: [
       {
         trackName: 'Moon Travel',
@@ -116,11 +118,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  17: {
     id: 17,
     releaseDate: '2022/08',
     title: 'beginning of summer #1',
-    isListenLinkFlag: false,
+    isListen: false,
     trackList: [
       {
         trackName: 'beginning of summer AM 10:00',
@@ -149,11 +151,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  16: {
     id: 16,
     releaseDate: '2022/01',
     title: 'Vivid Blue Sky',
-    isListenLinkFlag: false,
+    isListen: false,
     trackList: [
       {
         trackName: 'Midnight Sky',
@@ -177,11 +179,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  15: {
     id: 15,
     releaseDate: '2021/12',
     title: 'Tropical Vacation',
-    isListenLinkFlag: false,
+    isListen: false,
     trackList: [
       {
         trackName: 'Tropical Heaven',
@@ -205,11 +207,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  14: {
     id: 14,
     releaseDate: '2019/11',
     title: '異世界の秘密を曝くのはもう懲り懲りだよ〜!!!',
-    isListenLinkFlag: true,
+    isListen: true,
     trackList: [
       {
         trackName: 'ふたりの',
@@ -283,11 +285,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  13: {
     id: 13,
     releaseDate: '2019/08',
     title: 'Little Sun',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: '8/16',
@@ -321,11 +323,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  12: {
     id: 12,
     releaseDate: '2018/11',
     title: 'GALLERY',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: 'ひみつのふたり',
@@ -354,11 +356,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  11: {
     id: 11,
     releaseDate: '2017/12',
     title: 'GIRL und PANZERS',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: "She's In A Houser!!",
@@ -408,11 +410,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  10: {
     id: 10,
     releaseDate: '2017/05',
     title: 'GAME GIRLS',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: 'X3 Eyes',
@@ -436,11 +438,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  9: {
     id: 9,
     releaseDate: '2017/03',
     title: '秘封病特効薬おかわり',
-    isListenLinkFlag: false,
+    isListen: false,
     trackList: [
       {
         trackName: 'め',
@@ -469,11 +471,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  8: {
     id: 8,
     releaseDate: '2016/11',
     title: '秘封病特効薬',
-    isListenLinkFlag: false,
+    isListen: false,
     trackList: [
       {
         trackName: 'ふたりの',
@@ -507,11 +509,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  7: {
     id: 7,
     releaseDate: '2016/05',
     title: 'Tonight Seiga',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: '欲の果実',
@@ -620,11 +622,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  6: {
     id: 6,
     releaseDate: '2015/11',
     title: 'swing for PLAY GIRLS',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: 'Folie & Lie',
@@ -653,11 +655,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  5: {
     id: 5,
     releaseDate: '2015/05',
     title: '肉',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: 'ぼんじり',
@@ -686,11 +688,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  4: {
     id: 4,
     releaseDate: '2015/02',
     title: '赤の妹',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: '緋の門番',
@@ -719,11 +721,11 @@ export const archiveListData = [
       },
     ],
   },
-  {
+  3: {
     id: 3,
     releaseDate: '2014/11',
     title: 'Greenwich in the Sky',
-    isListenLinkFlag: true,
+    isListen: false,
     trackList: [
       {
         trackName: '天空のグリニッジ ～ Aerial midnight walk',
@@ -772,4 +774,4 @@ export const archiveListData = [
       },
     ],
   },
-] as const;
+};
