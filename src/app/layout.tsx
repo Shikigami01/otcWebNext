@@ -3,14 +3,12 @@ import 'the-new-css-reset/css/reset.css';
 import '../styles/globals.scss';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import styles from './styles.module.scss';
-import Head from 'next/head';
 
 const siteName = 'Over The Coffee';
 const description = 'Over The Coffee Official Web Site';
 const url = 'https://overthecoffee.net/';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     default: `${siteName}`,
     template: `%s | ${siteName}`,
@@ -39,12 +37,6 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
-      <Head>
-        <meta name="format-detection" content="telephone=no" />
-        <link rel="icon" href="/image/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/image/favicon.svg" />
-        <link rel="apple-touch-icon" href="/image/webclip.png" />
-      </Head>
       <body>
         <header>
           <Header />
