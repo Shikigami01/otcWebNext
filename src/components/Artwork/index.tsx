@@ -17,6 +17,7 @@ export const Artwork: React.FC<Props> = ({ id, name }) => {
       width="1024"
       height="1024"
       loading="lazy"
+      unoptimized
     />
   );
 };
