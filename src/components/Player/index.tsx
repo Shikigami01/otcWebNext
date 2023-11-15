@@ -16,7 +16,6 @@ export const Player: React.FC<Props> = ({ id, isListen }) => {
       {isListen && (
         <AudioPlayer
           src={src}
-          onPlay={(e) => console.log('onPlay')}
           volume={0.2}
           showJumpControls={false}
           autoPlayAfterSrcChange={false}
