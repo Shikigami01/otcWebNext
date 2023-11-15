@@ -61,7 +61,7 @@ export const archiveListData: Record<number, archiveListType> = {
     id: 19,
     releaseDate: '2022/12',
     title: 'like a disco',
-    isListen: false,
+    isListen: true,
     trackList: [
       {
         trackName: 'the beginning of night (2022 remix)',
@@ -94,7 +94,7 @@ export const archiveListData: Record<number, archiveListType> = {
     id: 18,
     releaseDate: '2022/09',
     title: 'Bright green rain',
-    isListen: false,
+    isListen: true,
     trackList: [
       {
         trackName: 'Moon Travel',
@@ -122,7 +122,7 @@ export const archiveListData: Record<number, archiveListType> = {
     id: 17,
     releaseDate: '2022/08',
     title: 'beginning of summer #1',
-    isListen: false,
+    isListen: true,
     trackList: [
       {
         trackName: 'beginning of summer AM 10:00',
@@ -155,7 +155,7 @@ export const archiveListData: Record<number, archiveListType> = {
     id: 16,
     releaseDate: '2022/01',
     title: 'Vivid Blue Sky',
-    isListen: false,
+    isListen: true,
     trackList: [
       {
         trackName: 'Midnight Sky',
@@ -183,7 +183,7 @@ export const archiveListData: Record<number, archiveListType> = {
     id: 15,
     releaseDate: '2021/12',
     title: 'Tropical Vacation',
-    isListen: false,
+    isListen: true,
     trackList: [
       {
         trackName: 'Tropical Heaven',
