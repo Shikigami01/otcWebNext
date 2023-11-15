@@ -17,6 +17,10 @@ const LINK_LIST_ITEM_ARRAY = [
     url: 'https://www.youtube.com/@Shikigami01',
     label: 'YouTube',
   },
+  {
+    url: 'https://overthecoffee.booth.pm/',
+    label: 'Booth',
+  },
 ];
 
 export const LinkList = () => {
