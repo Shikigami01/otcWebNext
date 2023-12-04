@@ -1,4 +1,5 @@
 export type Styles = {
+  errorWrapper: string;
   mainVisual: string;
 };
 
