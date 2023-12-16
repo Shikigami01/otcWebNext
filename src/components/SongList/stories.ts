@@ -12,6 +12,7 @@ const meta = {
         trackName: 'ふたりの',
         isOriginalSongFlag: true,
         originalSongName: '他愛も無い二人の博物誌',
+        composerName: '敷き紙',
       },
     ],
   },
@@ -27,7 +28,34 @@ export const noOriginal: Story = {
       {
         trackName: 'ふたりの',
         isOriginalSongFlag: false,
+        originalSongName: '',
+        composerName: '敷き紙',
+      },
+    ],
+  },
+};
+
+export const noCOmposerName: Story = {
+  args: {
+    data: [
+      {
+        trackName: 'ふたりの',
+        isOriginalSongFlag: true,
         originalSongName: '他愛も無い二人の博物誌',
+        composerName: '',
+      },
+    ],
+  },
+};
+
+export const noBoth: Story = {
+  args: {
+    data: [
+      {
+        trackName: 'ふたりの',
+        isOriginalSongFlag: false,
+        originalSongName: '',
+        composerName: '',
       },
     ],
   },

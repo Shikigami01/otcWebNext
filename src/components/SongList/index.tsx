@@ -12,10 +12,9 @@ export const SongList: React.FC<Props> = ({ data }) => {
         return (
           <li className={styles.item} key={item.trackName}>
             {item.trackName}
+            {item.composerName != null && ` / ${item.composerName}`}
             <br />
-            {item.isOriginalSongFlag === true && (
-              <div className={styles.text}>(原曲: {item.originalSongName})</div>
-            )}
+            {item.isOriginalSongFlag === true && `(原曲: ${item.originalSongName})`}
           </li>
         );
       })}

@@ -10,4 +10,5 @@ export type trackListType = {
   trackName: string;
   isOriginalSongFlag: boolean;
   originalSongName: string;
+  composerName: string | null;
 };
