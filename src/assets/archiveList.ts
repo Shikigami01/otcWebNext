@@ -1,6 +1,39 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  23: {
+    id: 23,
+    releaseDate: '2024/06',
+    title: 'Light purple ocean',
+    isListen: true,
+    trackList: [
+      {
+        trackName: 'Midnight Sky (2024 Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: '天空のグリニッジ',
+        composerName: null,
+      },
+      {
+        trackName: 'Ancient Temples',
+        isOriginalSongFlag: true,
+        originalSongName: '古の冥界寺',
+        composerName: null,
+      },
+      {
+        trackName: 'Phantom Cat',
+        isOriginalSongFlag: true,
+        originalSongName: '遠野幻想物語',
+        composerName: null,
+      },
+      {
+        trackName: 'Ghost Fields',
+        isOriginalSongFlag: true,
+        originalSongName: '夜のデンデラ野を逝く',
+        composerName: null,
+      },
+    ],
+  },
+
   22: {
     id: 22,
     releaseDate: '2023/12',
@@ -226,7 +259,7 @@ export const archiveListData: Record<number, archiveListType> = {
   16: {
     id: 16,
     releaseDate: '2022/01',
-    title: 'Vivid Blue Sky',
+    title: 'Vivid blue sky',
     isListen: true,
     trackList: [
       {
