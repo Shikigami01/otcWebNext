@@ -1,6 +1,50 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  24: {
+    id: 24,
+    releaseDate: '2024/08',
+    title: 'Usagi Vacation',
+    isListen: true,
+    trackList: [
+      {
+        trackName: 'RE Aoharu (F.S. Alt-Rock Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'RE Aoharu',
+        composerName: null,
+      },
+      {
+        trackName: 'Usagi Flap (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Usagi Flap',
+        composerName: null,
+      },
+      {
+        trackName: 'Water Drop (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Water Drop',
+        composerName: null,
+      },
+      {
+        trackName: 'Fall into the rabbit hole (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Fall into the rabbit hole',
+        composerName: null,
+      },
+      {
+        trackName: 'Up to 21°C (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Up to 21°C',
+        composerName: null,
+      },
+      {
+        trackName: 'Midsummer Cat (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Midsummer Cat',
+        composerName: null,
+      },
+    ],
+  },
   23: {
     id: 23,
     releaseDate: '2024/06',
@@ -33,7 +77,6 @@ export const archiveListData: Record<number, archiveListType> = {
       },
     ],
   },
-
   22: {
     id: 22,
     releaseDate: '2023/12',
