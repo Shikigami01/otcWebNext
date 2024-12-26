@@ -1,6 +1,56 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  25: {
+    id: 25,
+    releaseDate: '2024/12',
+    title: 'Abydos Summer Time',
+    isListen: true,
+    trackList: [
+      {
+        trackName: 'RE Aoharu (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'RE Aoharu',
+        composerName: null,
+      },
+      {
+        trackName: 'Dive into Summer (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Dive into Summer',
+        composerName: null,
+      },
+      {
+        trackName: 'OST 221 (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'OST 221',
+        composerName: null,
+      },
+      {
+        trackName: 'Sugar Story (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Sugar Story',
+        composerName: null,
+      },
+      {
+        trackName: 'Na Na Natsu! (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Na Na Natsu!',
+        composerName: null,
+      },
+      {
+        trackName: 'Signal of Abydos (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'Signal of Abydos',
+        composerName: null,
+      },
+      {
+        trackName: 'TOMODACHI SUMMER (Tropical House Remix)',
+        isOriginalSongFlag: true,
+        originalSongName: 'TOMODACHI SUMMER',
+        composerName: null,
+      },
+    ],
+  },
   24: {
     id: 24,
     releaseDate: '2024/08',
@@ -11,37 +61,37 @@ export const archiveListData: Record<number, archiveListType> = {
         trackName: 'RE Aoharu (F.S. Alt-Rock Remix)',
         isOriginalSongFlag: true,
         originalSongName: 'RE Aoharu',
-        composerName: null,
+        composerName: 'シイナフユキ (群雨アンブレイラ)',
       },
       {
         trackName: 'Usagi Flap (Tropical House Remix)',
         isOriginalSongFlag: true,
         originalSongName: 'Usagi Flap',
-        composerName: null,
+        composerName: '敷き紙',
       },
       {
         trackName: 'Water Drop (Tropical House Remix)',
         isOriginalSongFlag: true,
         originalSongName: 'Water Drop',
-        composerName: null,
+        composerName: '敷き紙',
       },
       {
         trackName: 'Fall into the rabbit hole (Tropical House Remix)',
         isOriginalSongFlag: true,
         originalSongName: 'Fall into the rabbit hole',
-        composerName: null,
+        composerName: '敷き紙',
       },
       {
         trackName: 'Up to 21°C (Tropical House Remix)',
         isOriginalSongFlag: true,
         originalSongName: 'Up to 21°C',
-        composerName: null,
+        composerName: '敷き紙',
       },
       {
         trackName: 'Midsummer Cat (Tropical House Remix)',
         isOriginalSongFlag: true,
         originalSongName: 'Midsummer Cat',
-        composerName: null,
+        composerName: '敷き紙',
       },
     ],
   },
