@@ -16,7 +16,8 @@ const About = () => {
           <Title>About</Title>
         </div>
         <Description>
-          Chiptune, Tropical House, UK Garageをメインに作る音楽同人サークルです。
+          Chiptune, Tropical House, UK Garage, Euphoric
+          Hardstyleをメインに作る音楽同人サークルです。
           <br />
           東方Project、アイカツ！、ブルーアーカイブの楽曲アレンジをメインに活動しています。
         </Description>
