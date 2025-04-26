@@ -1,6 +1,44 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  26: {
+    id: 26,
+    releaseDate: '2025/04',
+    title: 'beginning of summer #2',
+    isListen: true,
+    trackList: [
+      {
+        trackName: 'Beginning Of Summer PM 02:00',
+        isOriginalSongFlag: false,
+        originalSongName: '',
+        composerName: null,
+      },
+      {
+        trackName: 'Seafoam Serenity',
+        isOriginalSongFlag: false,
+        originalSongName: '',
+        composerName: null,
+      },
+      {
+        trackName: 'Ocena View',
+        isOriginalSongFlag: false,
+        originalSongName: '',
+        composerName: null,
+      },
+      {
+        trackName: 'Coastal Echo',
+        isOriginalSongFlag: false,
+        originalSongName: '',
+        composerName: null,
+      },
+      {
+        trackName: 'Pluviophile',
+        isOriginalSongFlag: false,
+        originalSongName: '',
+        composerName: null,
+      },
+    ],
+  },
   25: {
     id: 25,
     releaseDate: '2024/12',
