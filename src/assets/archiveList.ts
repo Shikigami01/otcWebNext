@@ -1,6 +1,56 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  27: {
+    id: 27,
+    releaseDate: '2025/08',
+    title: 'ヴァルキューレの夏季演習！',
+    isListen: true,
+    trackList: [
+      {
+        trackName: '演習準備！',
+        isOriginalSongFlag: true,
+        originalSongName: 'Dazzle Everyday',
+        composerName: null,
+      },
+      {
+        trackName: '水泳演習！',
+        isOriginalSongFlag: true,
+        originalSongName: 'Summer Attack!',
+        composerName: null,
+      },
+      {
+        trackName: '自由時間！',
+        isOriginalSongFlag: true,
+        originalSongName: 'OST 214',
+        composerName: null,
+      },
+      {
+        trackName: 'VSヘルメット団！',
+        isOriginalSongFlag: true,
+        originalSongName: "WE'RE CCC",
+        composerName: null,
+      },
+      {
+        trackName: 'バーベキュー！',
+        isOriginalSongFlag: true,
+        originalSongName: 'Ramune Lagoon',
+        composerName: null,
+      },
+      {
+        trackName: 'スイカ割り！',
+        isOriginalSongFlag: true,
+        originalSongName: 'Wave & Conquer',
+        composerName: null,
+      },
+      {
+        trackName: 'みんなで帰宅！',
+        isOriginalSongFlag: true,
+        originalSongName: 'Miracle',
+        composerName: null,
+      },
+    ],
+  },
   26: {
     id: 26,
     releaseDate: '2025/04',
