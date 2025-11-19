@@ -1,6 +1,38 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  28: {
+    id: 28,
+    releaseDate: '2025/11',
+    title: 'Orange sunrise beach',
+    isListen: true,
+    trackList: [
+      {
+        trackName: 'Sunrise',
+        isOriginalSongFlag: true,
+        originalSongName: '七夕坂に朝が来る',
+        composerName: null,
+      },
+      {
+        trackName: 'Traveling alone',
+        isOriginalSongFlag: true,
+        originalSongName: 'ひとりぼっちの常陸行路',
+        composerName: null,
+      },
+      {
+        trackName: 'Private beach',
+        isOriginalSongFlag: true,
+        originalSongName: '秘匿されたフォーシーズンズ',
+        composerName: null,
+      },
+      {
+        trackName: 'Coastal dawn',
+        isOriginalSongFlag: true,
+        originalSongName: '夜じゃなくてもお化けはいるから',
+        composerName: null,
+      },
+    ],
+  },
   27: {
     id: 27,
     releaseDate: '2025/08',
