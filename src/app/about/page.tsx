@@ -4,9 +4,7 @@ import { Title } from '@/components/Title';
 import { Metadata } from 'next';
 import styles from './styles.module.scss';
 
-export const metadata: Metadata = {
-  title: 'About',
-};
+export const metadata: Metadata = { title: 'About' };
 
 const About = () => {
   return (
@@ -16,8 +14,7 @@ const About = () => {
           <Title>About</Title>
         </div>
         <Description>
-          Chiptune, Tropical House, UK Garage, Euphoric
-          Hardstyleをメインに作る音楽同人サークルです。
+          Chiptune, Tropical House, Future Bass, Future Coreをメインに作る音楽同人サークルです。
           <br />
           東方Project、アイカツ！、ブルーアーカイブの楽曲アレンジをメインに活動しています。
         </Description>
