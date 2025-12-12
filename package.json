@@ -2,6 +2,7 @@
   "name": "otc-web-next",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.25.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +12,8 @@
     "build-storybook": "storybook build",
     "format": "prettier --write src/",
     "cm": "git-cz",
-    "tsm": "typed-scss-modules src --watch --implementation sass --nameFormat none --exportType default --aliasPrefixes.@ src/"
+    "tsm": "typed-scss-modules src --watch --implementation sass --nameFormat none --exportType default --aliasPrefixes.@ src/",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "next": "14.0.1",
