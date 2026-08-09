@@ -1,6 +1,56 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  29: {
+    id: 29,
+    releaseDate: '2026/08',
+    title: 'Twinkle Adventure',
+    isListen: true,
+    trackList: [
+      {
+        trackName: 'ワンダフル・スターツ',
+        isOriginalSongFlag: true,
+        originalSongName: 'Odekake',
+        composerName: null,
+      },
+      {
+        trackName: '銃弾とサングラス',
+        isOriginalSongFlag: true,
+        originalSongName: 'Constant Moderato',
+        composerName: null,
+      },
+      {
+        trackName: '喧騒のウサギ',
+        isOriginalSongFlag: true,
+        originalSongName: 'Sweet Allegro',
+        composerName: null,
+      },
+      {
+        trackName: '硝子越しの予感',
+        isOriginalSongFlag: true,
+        originalSongName: 'Dreaming Trip',
+        composerName: null,
+      },
+      {
+        trackName: 'フローライトの星空',
+        isOriginalSongFlag: true,
+        originalSongName: 'OST 313',
+        composerName: null,
+      },
+      {
+        trackName: 'コテージで乾杯',
+        isOriginalSongFlag: true,
+        originalSongName: 'Usagi Flap, Summer Survival!',
+        composerName: null,
+      },
+      {
+        trackName: 'ファインダー越しのスターマイン',
+        isOriginalSongFlag: true,
+        originalSongName: 'Sunset Memory',
+        composerName: null,
+      },
+    ],
+  },
   28: {
     id: 28,
     releaseDate: '2025/11',
