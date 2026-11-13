@@ -8,8 +8,10 @@ export const MainVisual = () => {
         className={styles.img}
         src="/image/main-visual.svg"
         alt="Over The Coffee Main Visual"
-        width="384"
-        height="312"
+        width="400"
+        height="323"
+        loading="eager"
+        style={{ width: '100%', height: 'auto' }}
       />
     </div>
   );
