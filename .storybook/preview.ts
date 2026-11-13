@@ -1,10 +1,10 @@
-import type { Preview } from '@storybook/react';
+import type { Preview } from '@storybook/nextjs';
 import 'the-new-css-reset/css/reset.css';
 import '../src/styles/globals.scss';
 
 const preview: Preview = {
+  tags: ['autodocs'],
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,

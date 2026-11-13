@@ -1,5 +1,5 @@
 import { archiveListData } from '../../assets/archiveList';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs';
 import { ArchiveList } from '.';
 
 type Story = StoryObj<typeof meta>;
