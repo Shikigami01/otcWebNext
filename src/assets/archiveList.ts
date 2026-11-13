@@ -1,6 +1,32 @@
 import { archiveListType } from '@/types/archiveList';
 
 export const archiveListData: Record<number, archiveListType> = {
+  30: {
+    id: 30,
+    releaseDate: '2026/11',
+    title: 'Melting pink horizon',
+    isListen: true,
+    trackList: [
+      {
+        trackName: 'ebb and flow',
+        isOriginalSongFlag: true,
+        originalSongName: '他愛も無い二人の博物誌',
+        composerName: null,
+      },
+      {
+        trackName: 'Pier nap',
+        isOriginalSongFlag: true,
+        originalSongName: 'シュレディンガーの化猫',
+        composerName: null,
+      },
+      {
+        trackName: 'Lull Cove',
+        isOriginalSongFlag: true,
+        originalSongName: '美しく心地の良い犯罪',
+        composerName: null,
+      },
+    ],
+  },
   29: {
     id: 29,
     releaseDate: '2026/08',
