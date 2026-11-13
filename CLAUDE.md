@@ -18,6 +18,7 @@ pnpm build            # 静的ファイル出力 (./out/ に生成)
 pnpm lint             # ESLint
 pnpm format           # Prettier (src/ 配下)
 pnpm storybook        # Storybook 起動 (http://localhost:6006)
+pnpm build-storybook  # Storybook の静的ビルド
 pnpm tsm              # SCSS Modules の型定義ファイル (.d.ts) をウォッチ生成
 pnpm cm               # git-cz でコミット (Conventional Commits)
 ```
@@ -47,6 +48,15 @@ pnpm cm               # git-cz でコミット (Conventional Commits)
 - **Tailwind CSS** も併用しているが、主要なスタイリングは SCSS Modules で行っている。
 - **CSS カスタムプロパティ** (`--gray`, `--brown`, `--black`) が `src/styles/globals.scss` で定義されており、各コンポーネントから参照可。
 - フォントは LINESeedJP (woff2) を `/public/fonts/` に自己ホストし、`globals.scss` で `@font-face` 定義。
+
+### 技術スタック
+
+Next.js 16 (App Router, Turbopack) / React 19 / Tailwind CSS 4 / Storybook 10 / ESLint 10 / Stylelint 17。パッケージマネージャーは pnpm のみ (`preinstall` で `only-allow pnpm`)。
+
+### 画像 (`next/image`)
+
+- `width` / `height` 属性は画像の実寸（SVG なら `viewBox`）と同じ縦横比にすること。比率が違うと、CSS で `height: auto` にしたときにブラウザ警告 (width or height modified) が出る。
+- ファーストビューに表示される画像（例: `MainVisual`）には `loading="eager"` を付ける（LCP 警告の回避）。
 
 ### パスエイリアス
 
