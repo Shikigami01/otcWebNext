@@ -7,8 +7,9 @@ import { SongList } from '@/components/SongList';
 import type { archiveListType } from '@/types/archiveList';
 import { notFound } from 'next/navigation';
 
-export async function generateMetadata({ params }: { params: Pick<archiveListType, 'id'> }) {
-  const item = await getItemById(params.id);
+export async function generateMetadata({ params }: { params: Promise<Pick<archiveListType, 'id'>> }) {
+  const { id } = await params;
+  const item = await getItemById(id);
 
   return {
     title: `${item.title}`,
@@ -19,8 +20,9 @@ const getItemById = async (id: number) => {
   return Promise.resolve(archiveListData[id]);
 };
 
-const ArchiveDetail = async ({ params }: { params: Pick<archiveListType, 'id'> }) => {
-  const item = await getItemById(params.id);
+const ArchiveDetail = async ({ params }: { params: Promise<Pick<archiveListType, 'id'>> }) => {
+  const { id } = await params;
+  const item = await getItemById(id);
 
   if (!item) {
     notFound();
